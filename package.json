@@ -3,14 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.1",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "PORT=3006 react-scripts start",
+    "start-dev": "NODE_ENV='development' PORT=3006 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "react-scripts test",
+    "prepush": "react-scripts test"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.15.0",
+    "husky": "^0.14.3",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-mock-store": "^1.5.3"
   }
 }
