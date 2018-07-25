@@ -20,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "react-scripts test",
-    "prepush": "react-scripts test"
+    "precommit": "react-scripts test --watchAll=false",
+    "prepush": "react-scripts test --watchAll=false"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.15.0",
