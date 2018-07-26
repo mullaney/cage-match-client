@@ -12,9 +12,7 @@ export class Cagematch extends Component {
 
   render() {
     const {cagematches, match} = this.props;
-    console.log('cagematches, match: ', cagematches, match);
     const cagematch = cagematches.find(cm => cm.slug === match.params.slug) || {};
-    console.log('cagematch: ', cagematch);
 
     if (!cagematch) {
       return null;
